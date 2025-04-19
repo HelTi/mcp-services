@@ -1,0 +1,25 @@
+{
+  "name": "@mcp-services/greeting",
+  "version": "1.0.0",
+  "description": "A greeting service implementation for MCP",
+  "main": "dist/index.js",
+  "bin": {
+    "greeting": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && chmod 755 dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch && node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+} 
