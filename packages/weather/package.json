@@ -4,7 +4,7 @@
   "description": "A weather service implementation for MCP",
   "main": "dist/index.js",
   "bin": {
-    "weather": "./dist/index.js"
+    "weather": "dist/index.js"
   },
   "files": [
     "dist"

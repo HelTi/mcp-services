@@ -9,7 +9,8 @@
   "scripts": {
     "build": "npm run build --workspaces",
     "start": "npm run start --workspaces",
-    "dev": "npm run dev --workspaces"
+    "dev": "npm run dev --workspaces",
+    "link-all": "npm link --workspaces"
   },
   "author": "HelTi",
   "license": "ISC"

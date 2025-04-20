@@ -41,3 +41,32 @@ npm start
 ```bash
 npm run dev
 ```
+
+## mcp 服务列表
+
+### weather
+天气mcp服务，使用心知天气的api 服务，你需要注册心知天气的api，并申请 API KEY。
+
+官方地址：https://www.seniverse.com/
+
+## cursor 本地开发配置
+启动前需运行 npm run dev 启动服务。
+### mcp 配置文件
+编辑 mcp.json 文件配置，args 的文件路径根据自己的文件配置进行调整
+```json
+{
+  "mcpServers": {
+    "greeting": {
+      "command": "node",
+      "args": ["/mcp-services/packages/greeting/dist/index.js"]
+    },
+    "weather": {
+      "command": "node",
+      "args": ["/mcp-services/packages/weather/dist/index.js"],
+      "env": {
+        "SENIVERSE_API_KEY": "心知天气 API key"
+      }
+    }
+  }
+}
+```
