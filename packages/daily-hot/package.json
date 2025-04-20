@@ -1,0 +1,26 @@
+{
+  "name": "@mcp-services/daily-hot",
+  "version": "1.0.0",
+  "description": "A daily hot service implementation for MCP",
+  "main": "dist/index.js",
+  "bin": {
+    "daily-hot": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && chmod 755 dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch && node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.6.7",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+} 

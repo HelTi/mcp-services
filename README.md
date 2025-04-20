@@ -49,8 +49,15 @@ npm run dev
 
 官方地址：https://www.seniverse.com/
 
+### daily-hot
+一些网站的今日热点
+
+### 今日热点
+需在本地启动今日热点服务，项目地址：
+https://github.com/HelTi/DailyHotApi
+
 ## cursor 本地开发配置
-启动前需运行 npm run dev 启动服务。
+启动前需运行 npm run build 生成服务文件。
 ### mcp 配置文件
 编辑 mcp.json 文件配置，args 的文件路径根据自己的文件配置进行调整
 ```json
@@ -66,7 +73,17 @@ npm run dev
       "env": {
         "SENIVERSE_API_KEY": "心知天气 API key"
       }
+    },
+    "daily-hot": {
+      "command": "node",
+      "args": ["/mcp-services/packages/daily-hot/dist/index.js"]
     }
   }
 }
 ```
+
+## 效果预览
+
+![计算](./docs/1.png)
+![天气测试](./docs/weather.png)
+![今日热点](./docs/daily-hot.png)
